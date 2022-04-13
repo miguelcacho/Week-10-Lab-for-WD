@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<title>Web Development Week 10</title>
+<body>
+<p>Create a preset array of numbers + create a piece of code that chooses the largest number.</p>
+<p>Preset array is [-10, -20, 0, 24, 95, 67, 36].</p>
+<p>Please press the button to reveal the maximum value from the preset array</p>
+<button id="max" value="max" onclick="max()">Click me!</button>
+<script>
+function max(){
+    let presetNums=[-10, -20, 0, 24, 95, 67, 36];
+    var maxNumber = presetNums[0];
+
+    for (var i = 0; i < presetNums.length; i++) {
+        if(maxNumber<presetNums[i]){
+            maxNumber=presetNums[i];
+        }
+    }
+    alert(maxNumber + ' is the largest number in this array.');
+}
+</script>
+</body>
+</html>
